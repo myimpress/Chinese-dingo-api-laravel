@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'standardsTree' => env('API_STANDARDS_TREE', 'x'),
+    'standardsTree' => env('API_STANDARDS_TREE', 'vnd'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'subtype' => env('API_SUBTYPE', ''),
+    'subtype' => env('API_SUBTYPE', 'myapp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -57,11 +57,11 @@ return [
     |
     */
 
-    'prefix' => env('API_PREFIX', null),
+    'prefix' => env('API_PREFIX', 'api'),
 
     /*
     |--------------------------------------------------------------------------
-    | Default API Domain
+    | Default API Domain 默认api域名
     |--------------------------------------------------------------------------
     |
     | A default domain to use for your API routes so you don't have to
@@ -86,7 +86,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Conditional Requests
+    | Conditional Requests 条件请求
     |--------------------------------------------------------------------------
     |
     | Globally enable conditional requests so that an ETag header is added to
@@ -100,7 +100,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Strict Mode
+    | Strict Mode 严格遵循标准模式
     |--------------------------------------------------------------------------
     |
     | Enabling strict mode will require clients to send a valid Accept header
