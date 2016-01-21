@@ -30,7 +30,7 @@ php artisan db:seed
 >>1.把.env API_VERSION = v1 改为v2
 
 
->>2.用postman 在 headers 添加 左边Accept,右边application/vnd.api.v2+json
+>>2.用postman 在 headers 添加 左边Accept,右边application/vnd.myapp.v2+json
 
 此配置完全适合小白,如是大神请绕过.
 
