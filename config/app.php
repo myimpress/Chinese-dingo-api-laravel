@@ -149,7 +149,7 @@ return [
          * dingo
          */
         Dingo\Api\Provider\LaravelServiceProvider::class,
-
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*

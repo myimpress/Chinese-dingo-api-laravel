@@ -10,6 +10,23 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
+/**
+ * App\User
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Post[] $posts
+ * @mixin \Eloquent
+ * @property integer $id
+ * @property string $name
+ * @property string $email
+ * @property string $password
+ * @property integer $age
+ * @property string $remember_token
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ * @mixin \Eloquent
+ * @mixin \Eloquent
+ * @mixin \Eloquent
+ */
 class User extends Model implements AuthenticatableContract,
                                     AuthorizableContract,
                                     CanResetPasswordContract

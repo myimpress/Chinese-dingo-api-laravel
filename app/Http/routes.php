@@ -11,7 +11,7 @@
 |
 */
 
-//创建节点 两种写法
+//创建节点 两种写法 一种官方的,另一个demo
 $api = app('api.router');
 //$api= app('Dingo\Api\Routing\Router');
 
@@ -22,6 +22,11 @@ $api->version('v1', function ($api) {
     $api->get('post', function(){
        return \App\Post::all();
     });
+
+    //控制器下
+    $api->get('responding ', 'App\Http\Controllers\Api\V1\UserController@responding');
+    $api->get('respondingWithAnArray/{id}', 'App\Http\Controllers\Api\V1\UserController@respondingWithAnArray');
+
 });
 
 
@@ -39,7 +44,6 @@ $api->version('v2', function($api){
 
 
 
-//测试异常.如果需要测试请把dd那行注释掉
 Route::get('/', function (\Illuminate\Http\Request $request)
 {
     return view('welcome');
