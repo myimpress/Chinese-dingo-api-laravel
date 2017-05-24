@@ -26,6 +26,7 @@ $api->version('v1', function ($api) {
     //控制器下
     $api->get('responding ', 'App\Http\Controllers\Api\V1\UserController@responding');
     $api->get('respondingWithAnArray/{id}', 'App\Http\Controllers\Api\V1\UserController@respondingWithAnArray');
+    $api->get('respondingWithASingleItem/{id}', 'App\Http\Controllers\Api\V1\UserController@respondingWithASingleItem');
 
 });
 

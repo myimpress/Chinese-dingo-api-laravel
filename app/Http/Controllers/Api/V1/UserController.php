@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\User;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
@@ -50,7 +49,7 @@ class UserController extends Controller
     public function respondingWithASingleItem($id)
     {
         $user = User::findOrFail($id);
-        return $this->response->item($user, new UserTransformer);
+        return $this->response->item($user, new UserTransformer());
 
     }
 
